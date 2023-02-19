@@ -20,7 +20,7 @@ public class Recognizer{
     }
     
     /// A struct representing a twodimensional size.
-    public struct Size : Equatable,Hashable{
+    public struct Size : Equatable,Hashable, Codable{
         let width:Int
         let height:Int
         
