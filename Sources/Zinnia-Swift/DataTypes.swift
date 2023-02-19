@@ -10,7 +10,7 @@ import Foundation
 /**
  A struct to represent a point in two-dimensional space
  */
-public struct Point{
+public struct Point: Codable {
     ///The horizontal distance from the origin
     let x:Int
     ///The vertical distance from the origin
@@ -23,7 +23,7 @@ public struct Point{
 /**
  A stroke, a gesture that contains a number of points (from pen down to pen up). Several strokes make a character.
  */
-public struct Stroke{
+public struct Stroke: Codable {
     public var points=[Point]()
     
     public mutating func add(point:Point){
